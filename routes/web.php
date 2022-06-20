@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::view("/", "index/index")->name("index");
+Route::view("/about-us", "about/about-us")->name("about");
